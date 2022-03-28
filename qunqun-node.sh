@@ -12,4 +12,4 @@ echo "停止旧容器并删除旧容器"
 docker stop qunqun-node-container
 docker rm qunqun-node-container
 echo "启动新容器"
-docker container run -p 3002:3002 --name qunqun-node-container -d qunqun-node:1.0
+docker container run -p 3001:3001 --name qunqun-node-container -d qunqun-node:1.0
