@@ -7,7 +7,7 @@ function sign (body) {
 }
 let server = http.createServer(function(req,res){
   console.log(req.method,req.url)
-  if(req.method == 'POST' && req.url == '/webhook'){
+  if(req.method == 'POST' && req.url == '/webhooks'){
     let buffers = []
     req.on('data',function(buffer){
       buffers.push(buffer)
@@ -49,5 +49,5 @@ let server = http.createServer(function(req,res){
 
 
 server.listen(3002,()=>{
-  console.log('服务已经在4000端口启动')
+  console.log('服务已经在3002端口启动')
 })
