@@ -36,6 +36,7 @@ let server = http.createServer(function (req, res) {
         child.stdout.on('end', function (buffer) {
           let log = Buffer.concat(buffers)
           console.log(log)
+          console.log('部署完成！！！！！！！')
         })
       }
 
